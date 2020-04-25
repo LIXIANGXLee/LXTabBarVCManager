@@ -13,7 +13,7 @@ import LXTabBarManager
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 var window: UIWindow?
-
+    var tabBarVC : LXTabBarController!
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let vcs = [UIViewController.self,UIViewController.self,UIViewController.self,UIViewController.self]
@@ -34,12 +34,17 @@ var window: UIWindow?
            centerView.setBackgroundImage(UIImage(named: "tabBar_publish_icon"), for: UIControl.State.normal)
            centerView.setTitleColor(UIColor.lightGray, for: .normal)
            config.centerConfig = LXCenterConfig(centerView: centerView, centerViewSize: CGSize(width: 49, height: 49))
-           let tabBarVC =  LXTabBarController(vcs, items,config: config)
+           tabBarVC =  LXTabBarController(vcs, items,config: config)
            tabBarVC.delegate_lx  = self
            tabBarVC.centerVC?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "扫码", style: UIBarButtonItem.Style.plain, target: self, action: #selector(backClick))
+        
+       
+        tabBarVC.setBadge(with: UIColor.blue, textSize: 15)
+        
         self.window?.rootViewController = tabBarVC
         
-        self.window?.makeKeyAndVisible()
+        
+      self.window?.makeKeyAndVisible()
 
         return true
     }
@@ -58,6 +63,9 @@ var window: UIWindow?
 extension AppDelegate: LXTabBarControllerDelegate {
     func lxTabBarController(_ tabBarController: LXTabBarController, didSelect index: Int) {
         print("======\(index)")
+//        if index != 2 {
+//             tabBarController.setBadge(with: "98", index: index)
+//        }
     }
     
     func lxTabBarController(_ tabBarController: LXTabBarController) -> UIView {

@@ -11,6 +11,6 @@ import UIKit
 open class LXCenterController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.green
+        view.backgroundColor = UIColor.white
     }
 }

@@ -56,11 +56,11 @@ extension LXTabBar {
     ///文字颜色设置
     private func setBarTitleColor(_ config: LXConfig) {
         UITabBarItem.appearance().titlePositionAdjustment = UIOffset(horizontal: 0.0, vertical: -config.titlePositionVertical)
-    UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: config.titleTextSelectedColor,.font:UIFont.systemFont(ofSize: config.titleSize)], for: .selected)
-    UITabBarItem.appearance().setTitleTextAttributes([.font:UIFont.systemFont(ofSize: config.titleSize)], for: .normal)
-        if #available(iOS 10.0, *) {
+        UITabBarItem.appearance().setTitleTextAttributes([.foregroundColor: config.titleTextSelectedColor,.font:UIFont.systemFont(ofSize: config.titleSize)], for: .selected)
+     UITabBarItem.appearance().setTitleTextAttributes([.font:UIFont.systemFont(ofSize: config.titleSize)], for: .normal)
+          if #available(iOS 10.0, *) {
             unselectedItemTintColor = config.titleTextColor
-        }
+         }
     }
     
     ///中间view设置
@@ -69,7 +69,7 @@ extension LXTabBar {
         centerConfig = config.centerConfig
         guard let cType = config.centerConfig else { return }
         addSubview(cType.centerView)
-    cType.centerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction)))
+        cType.centerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction)))
     }
 }
 
