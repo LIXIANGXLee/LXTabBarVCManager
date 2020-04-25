@@ -64,7 +64,7 @@ extension LXTabBarController {
     
     /// 外部调用 设置角标
     public func setBadge(with value: String , index: Int) {
-        if index >= tabBarItems.count { return }
+        if index >= tabBarItems.count || index < 0 { return }
         tabBarItems[index].setBadge(with: value)
     }
     

@@ -64,7 +64,7 @@ extension AppDelegate: LXTabBarControllerDelegate {
     func lxTabBarController(_ tabBarController: LXTabBarController, didSelect index: Int) {
         print("======\(index)")
 //        if index != 2 {
-//             tabBarController.setBadge(with: "98", index: index)
+             tabBarController.setBadge(with: "98", index: -1)
 //        }
     }
     

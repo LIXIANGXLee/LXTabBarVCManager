@@ -1,5 +1,5 @@
 PODS:
-  - LXTabBarManager (1.0.0)
+  - LXTabBarManager (1.1.1)
 
 DEPENDENCIES:
   - LXTabBarManager (from `./`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  LXTabBarManager: f396a7db0f74dc9d06c4b8769724db3bed07f415
+  LXTabBarManager: 5cea31ef71c9ed11137140082b76e289c944d45b
 
 PODFILE CHECKSUM: 6102711bd8d710ebe4e6eae9fef36e68133a5d78
 
