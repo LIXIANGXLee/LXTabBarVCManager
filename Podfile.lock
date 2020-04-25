@@ -1,0 +1,16 @@
+PODS:
+  - LXTabBarManager (1.0.0)
+
+DEPENDENCIES:
+  - LXTabBarManager (from `./`)
+
+EXTERNAL SOURCES:
+  LXTabBarManager:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  LXTabBarManager: f396a7db0f74dc9d06c4b8769724db3bed07f415
+
+PODFILE CHECKSUM: 6102711bd8d710ebe4e6eae9fef36e68133a5d78
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,6 @@
+framework module LXTabBarManager {
+  umbrella header "LXTabBarManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

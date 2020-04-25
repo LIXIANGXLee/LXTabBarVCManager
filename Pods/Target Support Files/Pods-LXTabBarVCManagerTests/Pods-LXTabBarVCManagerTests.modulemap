@@ -1,0 +1,6 @@
+framework module Pods_LXTabBarVCManagerTests {
+  umbrella header "Pods-LXTabBarVCManagerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

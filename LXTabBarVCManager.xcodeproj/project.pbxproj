@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04EB36612453F6A0007029B9 /* LXTabBarManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */; };
+		6671326F59F9A9A449209D14 /* Pods_LXTabBarVCManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16F829F9C00564D36BBAB82 /* Pods_LXTabBarVCManagerTests.framework */; };
+		76349C8A2452DCC200C6F6BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76349C892452DCC200C6F6BF /* AppDelegate.swift */; };
+		76349C932452DCC300C6F6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76349C922452DCC300C6F6BF /* Assets.xcassets */; };
+		76349C962452DCC300C6F6BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76349C942452DCC300C6F6BF /* LaunchScreen.storyboard */; };
+		76349CA12452DCC300C6F6BF /* LXTabBarVCManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76349CA02452DCC300C6F6BF /* LXTabBarVCManagerTests.swift */; };
+		76349CAC2452DCC300C6F6BF /* LXTabBarVCManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76349CAB2452DCC300C6F6BF /* LXTabBarVCManagerUITests.swift */; };
+		7CB9D7A3EF7FCAAA5F5F2B47 /* Pods_LXTabBarVCManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BAAD2FD34DF744A4DF30A7F /* Pods_LXTabBarVCManager.framework */; };
+		CD92D804EC13DA4FE5F7A066 /* Pods_LXTabBarVCManager_LXTabBarVCManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DE0C2645C3B10B7FDD7785 /* Pods_LXTabBarVCManager_LXTabBarVCManagerUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		76349C9D2452DCC300C6F6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76349C7E2452DCC200C6F6BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76349C852452DCC200C6F6BF;
+			remoteInfo = LXTabBarVCManager;
+		};
+		76349CA82452DCC300C6F6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 76349C7E2452DCC200C6F6BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 76349C852452DCC200C6F6BF;
+			remoteInfo = LXTabBarVCManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LXTabBarManager.podspec; sourceTree = "<group>"; };
+		47734A13076E65563557757C /* Pods-LXTabBarVCManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManagerTests/Pods-LXTabBarVCManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F4BA36D09D0268B5FBD472B /* Pods-LXTabBarVCManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager.debug.xcconfig"; sourceTree = "<group>"; };
+		613AE99538CFD9FEB687798C /* Pods-LXTabBarVCManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager.release.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager.release.xcconfig"; sourceTree = "<group>"; };
+		6BAAD2FD34DF744A4DF30A7F /* Pods_LXTabBarVCManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXTabBarVCManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76349C862452DCC200C6F6BF /* LXTabBarVCManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LXTabBarVCManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		76349C892452DCC200C6F6BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		76349C922452DCC300C6F6BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		76349C952452DCC300C6F6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		76349C972452DCC300C6F6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76349C9C2452DCC300C6F6BF /* LXTabBarVCManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXTabBarVCManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76349CA02452DCC300C6F6BF /* LXTabBarVCManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTabBarVCManagerTests.swift; sourceTree = "<group>"; };
+		76349CA22452DCC300C6F6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76349CA72452DCC300C6F6BF /* LXTabBarVCManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXTabBarVCManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		76349CAB2452DCC300C6F6BF /* LXTabBarVCManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXTabBarVCManagerUITests.swift; sourceTree = "<group>"; };
+		76349CAD2452DCC300C6F6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A31BD8ABAB03FA2D0AC6CF26 /* Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DE0DB92790999A2B4E1D8539 /* Pods-LXTabBarVCManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManagerTests.release.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManagerTests/Pods-LXTabBarVCManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0DE0C2645C3B10B7FDD7785 /* Pods_LXTabBarVCManager_LXTabBarVCManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXTabBarVCManager_LXTabBarVCManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7F03E0800E4A9A31381B1B /* Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F16F829F9C00564D36BBAB82 /* Pods_LXTabBarVCManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LXTabBarVCManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		76349C832452DCC200C6F6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB9D7A3EF7FCAAA5F5F2B47 /* Pods_LXTabBarVCManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76349C992452DCC300C6F6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6671326F59F9A9A449209D14 /* Pods_LXTabBarVCManagerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76349CA42452DCC300C6F6BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD92D804EC13DA4FE5F7A066 /* Pods_LXTabBarVCManager_LXTabBarVCManagerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33384D9EC8C57B152E1A92F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4BA36D09D0268B5FBD472B /* Pods-LXTabBarVCManager.debug.xcconfig */,
+				613AE99538CFD9FEB687798C /* Pods-LXTabBarVCManager.release.xcconfig */,
+				EA7F03E0800E4A9A31381B1B /* Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.debug.xcconfig */,
+				A31BD8ABAB03FA2D0AC6CF26 /* Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.release.xcconfig */,
+				47734A13076E65563557757C /* Pods-LXTabBarVCManagerTests.debug.xcconfig */,
+				DE0DB92790999A2B4E1D8539 /* Pods-LXTabBarVCManagerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		34DE8AC51806F4C0480AD1F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BAAD2FD34DF744A4DF30A7F /* Pods_LXTabBarVCManager.framework */,
+				E0DE0C2645C3B10B7FDD7785 /* Pods_LXTabBarVCManager_LXTabBarVCManagerUITests.framework */,
+				F16F829F9C00564D36BBAB82 /* Pods_LXTabBarVCManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76349C7D2452DCC200C6F6BF = {
+			isa = PBXGroup;
+			children = (
+				04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */,
+				76349C882452DCC200C6F6BF /* LXTabBarVCManager */,
+				76349C9F2452DCC300C6F6BF /* LXTabBarVCManagerTests */,
+				76349CAA2452DCC300C6F6BF /* LXTabBarVCManagerUITests */,
+				76349C872452DCC200C6F6BF /* Products */,
+				33384D9EC8C57B152E1A92F5 /* Pods */,
+				34DE8AC51806F4C0480AD1F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		76349C872452DCC200C6F6BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				76349C862452DCC200C6F6BF /* LXTabBarVCManager.app */,
+				76349C9C2452DCC300C6F6BF /* LXTabBarVCManagerTests.xctest */,
+				76349CA72452DCC300C6F6BF /* LXTabBarVCManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		76349C882452DCC200C6F6BF /* LXTabBarVCManager */ = {
+			isa = PBXGroup;
+			children = (
+				76349C892452DCC200C6F6BF /* AppDelegate.swift */,
+				76349C922452DCC300C6F6BF /* Assets.xcassets */,
+				76349C942452DCC300C6F6BF /* LaunchScreen.storyboard */,
+				76349C972452DCC300C6F6BF /* Info.plist */,
+			);
+			path = LXTabBarVCManager;
+			sourceTree = "<group>";
+		};
+		76349C9F2452DCC300C6F6BF /* LXTabBarVCManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				76349CA02452DCC300C6F6BF /* LXTabBarVCManagerTests.swift */,
+				76349CA22452DCC300C6F6BF /* Info.plist */,
+			);
+			path = LXTabBarVCManagerTests;
+			sourceTree = "<group>";
+		};
+		76349CAA2452DCC300C6F6BF /* LXTabBarVCManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				76349CAB2452DCC300C6F6BF /* LXTabBarVCManagerUITests.swift */,
+				76349CAD2452DCC300C6F6BF /* Info.plist */,
+			);
+			path = LXTabBarVCManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		76349C852452DCC200C6F6BF /* LXTabBarVCManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76349CB02452DCC300C6F6BF /* Build configuration list for PBXNativeTarget "LXTabBarVCManager" */;
+			buildPhases = (
+				59936A22DB8C6FC74086B325 /* [CP] Check Pods Manifest.lock */,
+				76349C822452DCC200C6F6BF /* Sources */,
+				76349C832452DCC200C6F6BF /* Frameworks */,
+				76349C842452DCC200C6F6BF /* Resources */,
+				F75407BA1F64C6D3047C768C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LXTabBarVCManager;
+			productName = LXTabBarVCManager;
+			productReference = 76349C862452DCC200C6F6BF /* LXTabBarVCManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		76349C9B2452DCC300C6F6BF /* LXTabBarVCManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76349CB32452DCC300C6F6BF /* Build configuration list for PBXNativeTarget "LXTabBarVCManagerTests" */;
+			buildPhases = (
+				ACDA8C0B23CD3094DA4B7B66 /* [CP] Check Pods Manifest.lock */,
+				76349C982452DCC300C6F6BF /* Sources */,
+				76349C992452DCC300C6F6BF /* Frameworks */,
+				76349C9A2452DCC300C6F6BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76349C9E2452DCC300C6F6BF /* PBXTargetDependency */,
+			);
+			name = LXTabBarVCManagerTests;
+			productName = LXTabBarVCManagerTests;
+			productReference = 76349C9C2452DCC300C6F6BF /* LXTabBarVCManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		76349CA62452DCC300C6F6BF /* LXTabBarVCManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76349CB62452DCC300C6F6BF /* Build configuration list for PBXNativeTarget "LXTabBarVCManagerUITests" */;
+			buildPhases = (
+				99E4B8697489FE54FE34EC65 /* [CP] Check Pods Manifest.lock */,
+				76349CA32452DCC300C6F6BF /* Sources */,
+				76349CA42452DCC300C6F6BF /* Frameworks */,
+				76349CA52452DCC300C6F6BF /* Resources */,
+				1BE0514E26B7F3839A294CB5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				76349CA92452DCC300C6F6BF /* PBXTargetDependency */,
+			);
+			name = LXTabBarVCManagerUITests;
+			productName = LXTabBarVCManagerUITests;
+			productReference = 76349CA72452DCC300C6F6BF /* LXTabBarVCManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76349C7E2452DCC200C6F6BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "李响";
+				TargetAttributes = {
+					76349C852452DCC200C6F6BF = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					76349C9B2452DCC300C6F6BF = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 76349C852452DCC200C6F6BF;
+					};
+					76349CA62452DCC300C6F6BF = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 76349C852452DCC200C6F6BF;
+					};
+				};
+			};
+			buildConfigurationList = 76349C812452DCC200C6F6BF /* Build configuration list for PBXProject "LXTabBarVCManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 76349C7D2452DCC200C6F6BF;
+			productRefGroup = 76349C872452DCC200C6F6BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				76349C852452DCC200C6F6BF /* LXTabBarVCManager */,
+				76349C9B2452DCC300C6F6BF /* LXTabBarVCManagerTests */,
+				76349CA62452DCC300C6F6BF /* LXTabBarVCManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76349C842452DCC200C6F6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04EB36612453F6A0007029B9 /* LXTabBarManager.podspec in Resources */,
+				76349C962452DCC300C6F6BF /* LaunchScreen.storyboard in Resources */,
+				76349C932452DCC300C6F6BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76349C9A2452DCC300C6F6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76349CA52452DCC300C6F6BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE0514E26B7F3839A294CB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59936A22DB8C6FC74086B325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LXTabBarVCManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E4B8697489FE54FE34EC65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LXTabBarVCManager-LXTabBarVCManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDA8C0B23CD3094DA4B7B66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LXTabBarVCManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F75407BA1F64C6D3047C768C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		76349C822452DCC200C6F6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76349C8A2452DCC200C6F6BF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76349C982452DCC300C6F6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76349CA12452DCC300C6F6BF /* LXTabBarVCManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76349CA32452DCC300C6F6BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76349CAC2452DCC300C6F6BF /* LXTabBarVCManagerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		76349C9E2452DCC300C6F6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76349C852452DCC200C6F6BF /* LXTabBarVCManager */;
+			targetProxy = 76349C9D2452DCC300C6F6BF /* PBXContainerItemProxy */;
+		};
+		76349CA92452DCC300C6F6BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 76349C852452DCC200C6F6BF /* LXTabBarVCManager */;
+			targetProxy = 76349CA82452DCC300C6F6BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		76349C942452DCC300C6F6BF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				76349C952452DCC300C6F6BF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		76349CAE2452DCC300C6F6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		76349CAF2452DCC300C6F6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		76349CB12452DCC300C6F6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4BA36D09D0268B5FBD472B /* Pods-LXTabBarVCManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4ACXVJNVR;
+				INFOPLIST_FILE = LXTabBarVCManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XLee.LXTabBarVCManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		76349CB22452DCC300C6F6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613AE99538CFD9FEB687798C /* Pods-LXTabBarVCManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R4ACXVJNVR;
+				INFOPLIST_FILE = LXTabBarVCManager/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XLee.LXTabBarVCManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		76349CB42452DCC300C6F6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47734A13076E65563557757C /* Pods-LXTabBarVCManagerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXTabBarVCManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XLee.LXTabBarVCManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXTabBarVCManager.app/LXTabBarVCManager";
+			};
+			name = Debug;
+		};
+		76349CB52452DCC300C6F6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0DB92790999A2B4E1D8539 /* Pods-LXTabBarVCManagerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXTabBarVCManagerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XLee.LXTabBarVCManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LXTabBarVCManager.app/LXTabBarVCManager";
+			};
+			name = Release;
+		};
+		76349CB72452DCC300C6F6BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7F03E0800E4A9A31381B1B /* Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXTabBarVCManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XLee.LXTabBarVCManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LXTabBarVCManager;
+			};
+			name = Debug;
+		};
+		76349CB82452DCC300C6F6BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31BD8ABAB03FA2D0AC6CF26 /* Pods-LXTabBarVCManager-LXTabBarVCManagerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LXTabBarVCManagerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XLee.LXTabBarVCManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LXTabBarVCManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		76349C812452DCC200C6F6BF /* Build configuration list for PBXProject "LXTabBarVCManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76349CAE2452DCC300C6F6BF /* Debug */,
+				76349CAF2452DCC300C6F6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76349CB02452DCC300C6F6BF /* Build configuration list for PBXNativeTarget "LXTabBarVCManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76349CB12452DCC300C6F6BF /* Debug */,
+				76349CB22452DCC300C6F6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76349CB32452DCC300C6F6BF /* Build configuration list for PBXNativeTarget "LXTabBarVCManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76349CB42452DCC300C6F6BF /* Debug */,
+				76349CB52452DCC300C6F6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76349CB62452DCC300C6F6BF /* Build configuration list for PBXNativeTarget "LXTabBarVCManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				76349CB72452DCC300C6F6BF /* Debug */,
+				76349CB82452DCC300C6F6BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76349C7E2452DCC200C6F6BF /* Project object */;
+}
