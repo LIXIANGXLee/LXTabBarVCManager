@@ -34,7 +34,7 @@ var window: UIWindow?
            centerView.setBackgroundImage(UIImage(named: "tabBar_publish_icon"), for: UIControl.State.normal)
            centerView.setTitleColor(UIColor.lightGray, for: .normal)
            config.centerConfig = LXCenterConfig(centerView: centerView, centerViewSize: CGSize(width: 49, height: 49))
-           tabBarVC =  LXTabBarController(vcs, items,config: config)
+        tabBarVC =  LXTabBarController(vcs, items,config: config,isAnimation: true)
            tabBarVC.delegate_lx  = self
            tabBarVC.centerVC?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "扫码", style: UIBarButtonItem.Style.plain, target: self, action: #selector(backClick))
         

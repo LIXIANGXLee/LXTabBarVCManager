@@ -36,17 +36,25 @@ open class LXTabBarController: UITabBarController {
 
     // 自定义的 tabBar
     private lazy var lxTabBar: LXTabBar =  LXTabBar()
-    
+    fileprivate lazy var animatedTransitor = LXTabBarVCAnimatedTransitor(self)
+
     /// 添加指定构造器
-    public init (_ controllers: [UIViewController.Type], _ items: [Item],config: LXConfig? = nil, navVC: UINavigationController.Type? = nil) {
+    public init (_ controllers: [UIViewController.Type], _ items: [Item],config: LXConfig? = nil, navVC: UINavigationController.Type? = nil, isAnimation: Bool = false) {
         self.controllers = controllers
         self.items = items
         self.navVC = navVC
         self.config = config
         super.init(nibName: nil, bundle: nil)
         self.view.backgroundColor = UIColor.white
-        delegate = self
-        
+        if isAnimation {
+            delegate = animatedTransitor
+              animatedTransitor.finishDidSelect = { [weak self] (transitor,index) in
+                  self?.delegate_lx?.lxTabBarController?(self!, didSelect: index)
+            }
+        }else {
+            delegate = self
+        }
+       
         // 初始化tabBar
         setTabBarUI()
         // 初始化UI

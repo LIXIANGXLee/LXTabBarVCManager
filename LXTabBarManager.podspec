@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LXTabBarManager"
-  spec.version      = "1.1.1"
+  spec.version      = "1.2.0"
   spec.summary      = "LXTabBarManager"
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,14 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
   
-   spec.source_files = 'LXTabBarManager/*.{swift}'
+   spec.subspec 'LXTabBarAnimation' do |tba|
+      tba.source_files = 'LXTabBarManager/LXTabBarAnimation/*.{swift}'
+   end
+  
+   spec.subspec 'LXTabBarManager' do |tbm|
+       tbm.source_files = 'LXTabBarManager/*.{swift}'
+       tbm.dependency 'LXTabBarManager/LXTabBarAnimation'
+   end
 
  # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
  # spec.exclude_files = "Classes/Exclude"

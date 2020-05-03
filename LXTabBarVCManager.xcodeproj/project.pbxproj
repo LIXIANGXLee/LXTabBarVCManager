@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LXTabBarManager.podspec; sourceTree = "<group>"; };
+		04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LXTabBarManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		47734A13076E65563557757C /* Pods-LXTabBarVCManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManagerTests/Pods-LXTabBarVCManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4BA36D09D0268B5FBD472B /* Pods-LXTabBarVCManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager.debug.xcconfig"; sourceTree = "<group>"; };
 		613AE99538CFD9FEB687798C /* Pods-LXTabBarVCManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager.release.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager.release.xcconfig"; sourceTree = "<group>"; };

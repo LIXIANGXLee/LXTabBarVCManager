@@ -16,6 +16,20 @@
     "git": "https://github.com/LIXIANGXLee/LXTabBarVCManager.git",
     "tag": "1.1.1"
   },
-  "source_files": "LXTabBarManager/*.{swift}",
+  "subspecs": [
+    {
+      "name": "LXTabBarAnimation",
+      "source_files": "LXTabBarManager/LXTabBarAnimation/*.{swift}"
+    },
+    {
+      "name": "LXTabBarManager",
+      "source_files": "LXTabBarManager/*.{swift}",
+      "dependencies": {
+        "LXTabBarManager/LXTabBarAnimation": [
+
+        ]
+      }
+    }
+  ],
   "swift_version": "5.0"
 }
