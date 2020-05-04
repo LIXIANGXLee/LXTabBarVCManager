@@ -1,9 +1,10 @@
 //
-//  TabBarVCAnimatedTransitor.swift
-//  TarBarController
+//  LXTabBarVCAnimatedTransitor.swift
+//  LXTabBarVCManager
 //
-//  Created by LIXIANG on 2019/10/14.
-//  Copyright © 2019 LIXIANG. All rights reserved.
+//  Created by XL on 2020/4/24.
+//  Copyright © 2020 李响. All rights reserved.
+//
 // UITabBarController 转场动画 处理 
 
 import UIKit

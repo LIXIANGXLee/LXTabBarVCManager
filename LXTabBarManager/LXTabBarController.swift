@@ -38,8 +38,20 @@ open class LXTabBarController: UITabBarController {
     private lazy var lxTabBar: LXTabBar =  LXTabBar()
     fileprivate lazy var animatedTransitor = LXTabBarVCAnimatedTransitor(self)
 
-    /// 添加指定构造器
-    public init (_ controllers: [UIViewController.Type], _ items: [Item],config: LXConfig? = nil, navVC: UINavigationController.Type? = nil, isAnimation: Bool = false) {
+     /// 添加指定构造器
+     ///
+     /// - Parameters:
+     ///   - controllers: 子控制器
+     ///   - items:  item 按钮
+     ///   - config: 相关配置信息
+     ///   - navVC:  导航控制器
+     ///   - isAnimation: 切换控制器时是否存在动画
+    public init (_ controllers: [UIViewController.Type],
+                 _ items: [Item],
+                 config: LXConfig? = nil,
+                 navVC: UINavigationController.Type? = nil,
+                 isAnimation: Bool = false)
+    {
         self.controllers = controllers
         self.items = items
         self.navVC = navVC
@@ -71,12 +83,20 @@ open class LXTabBarController: UITabBarController {
 extension LXTabBarController {
     
     /// 外部调用 设置角标
+    ///
+    /// - Parameters:
+    ///   - value:  要设置的值
+    ///   - index:  item 按钮 索引
     public func setBadge(with value: String , index: Int) {
         if index >= tabBarItems.count || index < 0 { return }
         tabBarItems[index].setBadge(with: value)
     }
     
     /// 外部调用 设置角标颜色和字体大小
+    ///
+    /// - Parameters:
+    ///   - color:  要设置的颜色
+    ///   - textSize:  字体大小
     public func setBadge(with color: UIColor, textSize: CGFloat) {
         for item in tabBarItems {
             item.setBadge(with: color, textSize: textSize)
@@ -113,7 +133,7 @@ extension LXTabBarController {
         ///添加中间按钮
         if let _ = config?.centerConfig {
             controllers.insert(LXCenterController.self, at: items.count / 2 )
-            let item = Item(title: "", image: UIImage(), selectImage: UIImage())
+            let item = Item(title: nil, image:nil, selectImage:nil)
             items.insert(item, at: items.count / 2 )
         }
         
@@ -141,6 +161,7 @@ extension LXTabBarController {
 // MARK: - TabBarController 点击事件回调
 extension LXTabBarController: UITabBarControllerDelegate {
     public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
         delegate_lx?.lxTabBarController?(self, didSelect: tabBarController.selectedIndex)
     }
 }

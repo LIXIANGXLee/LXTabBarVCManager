@@ -19,9 +19,15 @@ public struct LXCenterConfig {
     /// 圆角大小
     public var cornerRadius: CGFloat?
     ///指定构造器
-    public init(centerView: UIView, centerViewSize: CGSize) {
+    public init(centerView: UIView,
+                centerViewSize: CGSize,
+                centerOffY: CGFloat = 0.0,
+                cornerRadius: CGFloat? = nil)
+    {
         self.centerView = centerView
         self.centerViewSize = centerViewSize
+        self.centerOffY = centerOffY
+        self.cornerRadius = cornerRadius
     }
 }
 
@@ -29,32 +35,47 @@ public struct LXCenterConfig {
 public struct LXConfig {
 
    ///字体大小
-   public var titleSize: CGFloat = 10
+   public var titleSize: CGFloat
    ///文本偏移量
-   public var titlePositionVertical: CGFloat = 3
+   public var titlePositionVertical: CGFloat
    ///文本默认颜色
-   public var titleTextColor: UIColor = UIColor.lightGray
+   public var titleTextColor: UIColor
    ///文本选中颜色
-   public var titleTextSelectedColor: UIColor = UIColor.orange
+   public var titleTextSelectedColor: UIColor
    ///tabBar背景颜色
    public var backgroundImage: UIImage?
    ///阴影颜色
    public var shadowImage: UIImage?
     ///中间的view
    public var centerConfig: LXCenterConfig?
+    
    ///指定构造器
-   public init() {}
-
+    public init(titleSize: CGFloat = 10,
+                titlePositionVertical: CGFloat = 3,
+                titleTextColor: UIColor = UIColor.lightGray,
+                titleTextSelectedColor: UIColor = UIColor.orange,
+                backgroundImage: UIImage? = nil,
+                shadowImage: UIImage? = nil,
+                centerConfig: LXCenterConfig? = nil)
+    {
+        self.titleSize = titleSize
+        self.titlePositionVertical = titlePositionVertical
+        self.titleTextColor = titleTextColor
+        self.titleTextSelectedColor = titleTextSelectedColor
+        self.backgroundImage = backgroundImage
+        self.shadowImage = shadowImage
+        self.centerConfig = centerConfig
+    }
 }
 
 // MARK: - 构建Item
 public struct Item {
-   public var title: String
-   public var image: UIImage
-   public var selectImage: UIImage
+   public var title: String?
+   public var image: UIImage?
+   public var selectImage: UIImage?
    
     ///指定构造器
-   public init(title: String, image: UIImage, selectImage: UIImage) {
+   public init(title: String?, image: UIImage?, selectImage: UIImage?) {
         self.title = title
         self.image = image
         self.selectImage = selectImage
@@ -63,13 +84,13 @@ public struct Item {
 
 // MARK: - 常量配置信息
 public struct LXConst {
-    //app屏幕宽度
+    ///app屏幕宽度
     public static let screenW = UIScreen.main.bounds.width
-    //app屏幕高度
+    ///app屏幕高度
     public static let screenH = UIScreen.main.bounds.height
-    //tabBar 的刘海高度
+    ///tabBar 的刘海高度
     public static let touchBarH  = isIPhoneX ? CGFloat(34.0) : CGFloat(0.0)
     public static let isIPhoneX = (LXConst.screenH == CGFloat(812) || LXConst.screenH == CGFloat(896)) ? true : false
-    //屏幕相比iPhone6的宽度比例
+    ///屏幕相比iPhone6的宽度比例
     public static let scale = LXConst.screenW / CGFloat(375.0)
 }

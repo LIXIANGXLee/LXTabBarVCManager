@@ -23,19 +23,27 @@ public class LXTabBarItem: UITabBarItem {
 }
 
 extension LXTabBarItem {
-    //设置内容
+  
+    ///设置内容
     private func setContent() {
         title = item.title
-        image = item.image.withRenderingMode(.alwaysOriginal)
-        selectedImage = item.selectImage.withRenderingMode(.alwaysOriginal)
+        image = item.image?.withRenderingMode(.alwaysOriginal)
+        selectedImage = item.selectImage?.withRenderingMode(.alwaysOriginal)
     }
     
     /// 外部调用 设置角标
+    ///
+    /// - Parameters:
+    ///   - value:  角标值
     public func setBadge(with value: String ) {
          badgeValue = (value.count > 0) ? value : nil
     }
     
     /// 外部调用 设置角标颜色和字体大小
+    ///
+    /// - Parameters:
+    ///   - color:  要设置的颜色
+    ///   - textSize:  字体大小
     public func setBadge(with color: UIColor, textSize: CGFloat) {
         if #available(iOS 10.0, *) {
             setBadgeTextAttributes([.font : UIFont.systemFont(ofSize: textSize),.foregroundColor: color], for: UIControl.State.normal)

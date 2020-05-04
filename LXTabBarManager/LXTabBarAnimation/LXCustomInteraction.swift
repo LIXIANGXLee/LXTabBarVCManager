@@ -1,9 +1,9 @@
 //
-//  CustomInteraction.swift
-//  CustomInteraction
+//  LXCustomInteraction.swift
+//  LXTabBarVCManager
 //
-//  Created by LIXIANG on 2019/10/8.
-//  Copyright © 2019 LIXIANG. All rights reserved.
+//  Created by XL on 2020/4/24.
+//  Copyright © 2020 李响. All rights reserved.
 //
 
 import UIKit
@@ -51,8 +51,13 @@ extension LXCustomInteraction {
             update(progress)
         case .cancelled , .ended:
             isInteractive = false
-            progress > 0.5 ?  finish() :  cancel()
-            delegate?.customInteraction?(self, index: tabBarVC.selectedIndex)
+            if progress > 0.5 {
+                 finish()
+                 delegate?.customInteraction?(self, index: tabBarVC.selectedIndex)
+            }else {
+                 cancel()
+            }
+            
         default:
             break
         }
