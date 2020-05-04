@@ -3,7 +3,7 @@
 #### 项目介绍
  **
 
-### 最完美、最轻量级的TabBarController
+### Swift 最轻量级的 TabBarController 主控制器,可以设置切换tab时的push和pop动画，也可以手动滑动切换tab
 ** 
 
 #### 安装说明
