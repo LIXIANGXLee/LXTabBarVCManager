@@ -10,10 +10,7 @@ import UIKit
 
 // MARK: - 协议
 @objc public protocol LXTabBarControllerDelegate: AnyObject {
-    
-    /// 从外部获取自定义的view 显示到LXCenterController
-   @objc optional func lxTabBarController(_ tabBarController: LXTabBarController) -> UIView
-    
+       
     /// tabItem 点击事件回调
    @objc optional  func lxTabBarController(_ tabBarController: LXTabBarController,didSelect index: Int)
 
@@ -23,10 +20,7 @@ import UIKit
 open class LXTabBarController: UITabBarController {
 
     /// 代理监听回调
-    public var delegate_lx: LXTabBarControllerDelegate?
-    
-    ///中间按钮对应的控制器（可用作外部设置导航用）
-    public private(set) var centerVC: LXCenterController?
+    public weak var delegate_lx: LXTabBarControllerDelegate?
 
     private var controllers: [UIViewController.Type]
     private var items: [Item]
@@ -131,8 +125,9 @@ extension LXTabBarController {
         if controllers.count != items.count { return }
         
         ///添加中间按钮
-        if let _ = config?.centerConfig {
-            controllers.insert(LXCenterController.self, at: items.count / 2 )
+        if let config = config?.centerConfig {
+            
+            controllers.insert(config.centerVC.self, at: items.count / 2 )
             let item = Item(title: nil, image:nil, selectImage:nil)
             items.insert(item, at: items.count / 2 )
         }
@@ -146,14 +141,12 @@ extension LXTabBarController {
             controller.tabBarItem = tabBarItem
             
             ///添加中间特殊按钮对应的控制器
-            if controller.isKind(of: LXCenterController.self) {
+             if let config = config?.centerConfig, controller.isKind(of: config.centerVC.self) {
                 controller.tabBarItem.isEnabled = false
-                controller.view = delegate_lx?.lxTabBarController?(self)
-                self.centerVC = controller as? LXCenterController
              }
             
             //添加子控制
-            addChild(getNav(controller))
+           addChild(getNav(controller))
         }
     }
 }

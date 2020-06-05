@@ -1,9 +1,9 @@
 PODS:
-  - LXTabBarManager (1.1.1):
-    - LXTabBarManager/LXTabBarAnimation (= 1.1.1)
-    - LXTabBarManager/LXTabBarManager (= 1.1.1)
-  - LXTabBarManager/LXTabBarAnimation (1.1.1)
-  - LXTabBarManager/LXTabBarManager (1.1.1):
+  - LXTabBarManager (1.3.0):
+    - LXTabBarManager/LXTabBarAnimation (= 1.3.0)
+    - LXTabBarManager/LXTabBarManager (= 1.3.0)
+  - LXTabBarManager/LXTabBarAnimation (1.3.0)
+  - LXTabBarManager/LXTabBarManager (1.3.0):
     - LXTabBarManager/LXTabBarAnimation
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  LXTabBarManager: 090770854fe56c5b8fca7c5a7f6cee36a1aff5c1
+  LXTabBarManager: 782ffcc95091e876b632ea5e79f5e170b2ee49cb
 
 PODFILE CHECKSUM: 6102711bd8d710ebe4e6eae9fef36e68133a5d78
 

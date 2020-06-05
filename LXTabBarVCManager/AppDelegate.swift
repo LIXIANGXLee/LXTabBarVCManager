@@ -57,10 +57,9 @@ var window: UIWindow?
            config.titleTextSelectedColor = UIColor.red
            config.backgroundImage = UIImage(named: "截屏2020-04-25 上午10.37.49")
                 
-           config.centerConfig = LXCenterConfig(centerView: centerButton, centerViewSize: CGSize(width: UIScreen.main.bounds.width / 5, height: 59),centerOffY: 10)
-           tabBarVC = LXTabBarController(vcs, items,config: config,isAnimation: true)
+        config.centerConfig = LXCenterConfig(centerVC: LXCenterViewController.self, centerView: centerButton, centerViewSize: CGSize(width: UIScreen.main.bounds.width / 5, height: 59),centerOffY: 10)
+           tabBarVC = LXTabBarController(vcs, items,config: config,isAnimation: false)
            tabBarVC.delegate_lx  = self
-           tabBarVC.centerVC?.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "扫码", style: UIBarButtonItem.Style.plain, target: self, action: #selector(backClick))
        
         tabBarVC.setBadge(with: UIColor.blue, textSize: 15)
         self.window?.rootViewController = tabBarVC
@@ -83,19 +82,6 @@ var window: UIWindow?
 
 extension AppDelegate: LXTabBarControllerDelegate {
     func lxTabBarController(_ tabBarController: LXTabBarController, didSelect index: Int) {
-        
-        
         centerButton.isSelected = index == 2
-        
-        print("======\(index)")
-//        if index != 2 {
-//             tabBarController.setBadge(with: "98", index: index)
-//        }
-    }
-    
-    func lxTabBarController(_ tabBarController: LXTabBarController) -> UIView {
-         let view = UIView(frame: CGRect(x: 100, y: 100, width: 375, height: 667))
-        view.backgroundColor = UIColor.orange
-        return view
     }
 }

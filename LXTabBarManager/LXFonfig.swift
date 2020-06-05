@@ -10,6 +10,10 @@ import UIKit
 
 // MARK: - 中间按钮配置信息
 public struct LXCenterConfig {
+    
+    //中间控制器
+    public var centerVC: UIViewController.Type
+
     ///中间的view
     public var centerView: UIView
     ///中间view的尺寸
@@ -19,11 +23,13 @@ public struct LXCenterConfig {
     /// 圆角大小
     public var cornerRadius: CGFloat?
     ///指定构造器
-    public init(centerView: UIView,
+    public init(centerVC: UIViewController.Type,
+                centerView: UIView,
                 centerViewSize: CGSize,
                 centerOffY: CGFloat = 0.0,
                 cornerRadius: CGFloat? = nil)
     {
+        self.centerVC = centerVC
         self.centerView = centerView
         self.centerViewSize = centerViewSize
         self.centerOffY = centerOffY

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0495C784248AA7490055E8F1 /* LXCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495C783248AA7490055E8F1 /* LXCenterViewController.swift */; };
 		04EB36612453F6A0007029B9 /* LXTabBarManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */; };
 		6671326F59F9A9A449209D14 /* Pods_LXTabBarVCManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F16F829F9C00564D36BBAB82 /* Pods_LXTabBarVCManagerTests.framework */; };
 		76349C8A2452DCC200C6F6BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76349C892452DCC200C6F6BF /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0495C783248AA7490055E8F1 /* LXCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LXCenterViewController.swift; sourceTree = "<group>"; };
 		04EB36602453F6A0007029B9 /* LXTabBarManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LXTabBarManager.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		47734A13076E65563557757C /* Pods-LXTabBarVCManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManagerTests/Pods-LXTabBarVCManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5F4BA36D09D0268B5FBD472B /* Pods-LXTabBarVCManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LXTabBarVCManager.debug.xcconfig"; path = "Target Support Files/Pods-LXTabBarVCManager/Pods-LXTabBarVCManager.debug.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				76349C922452DCC300C6F6BF /* Assets.xcassets */,
 				76349C942452DCC300C6F6BF /* LaunchScreen.storyboard */,
 				76349C972452DCC300C6F6BF /* Info.plist */,
+				0495C783248AA7490055E8F1 /* LXCenterViewController.swift */,
 			);
 			path = LXTabBarVCManager;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76349C8A2452DCC200C6F6BF /* AppDelegate.swift in Sources */,
+				0495C784248AA7490055E8F1 /* LXCenterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
